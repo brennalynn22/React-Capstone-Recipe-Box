@@ -1,0 +1,15 @@
+.header {
+    background-color: rgb(129,178,154);
+    height: auto;
+    width:100vw;
+    display: flex;
+    
+}
+
+.headerTitle
+{
+    font-family: "Lobster";
+    font-size: 70px;
+    font-weight: 700;
+    color:rgb(61,61,91)
+}
