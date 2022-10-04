@@ -19,30 +19,40 @@ padding:0px;
   display: flex;
   flex-direction: column;
   align-items:center;
+  justify-content: center;
 
 }
 
 .welcome{
-  font-size: 36px;
+  font-size: 48px;
+  font-weight: 500;
 
 }
 .title {
-  font-family: lobster;
-  font-size: 96px;
+  font-family: Grand Hotel;
+  font-size: 110px;
   font-weight: bold;
   color:rgb(61,61,91);
+  
 }
 .auth-container {
   display:flex;
-  gap:10px;
+  width:500px;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
 }
 .auth-text {
+  font-size: 20px;
   font-weight: bold;
- 
-  
 }
+.auth-text:hover{
+  text-decoration: underline 2px;
+  color: rgb(61,61,91);
+
+}
+
 .form-auth {
-  outline: 2px solid rgb(61,61,91);
+  outline: 1px solid rgb(61,61,91);
   background-color: rgb(242,204,143);
   width: 300px;
   height: 200px;
@@ -64,3 +74,4 @@ padding:0px;
   font-weight: 600;
 
 }
+

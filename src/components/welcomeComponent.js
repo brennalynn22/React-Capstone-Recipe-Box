@@ -15,7 +15,7 @@ function WelcomeComponent() {
       <div className="welcome">Welcome to</div>
       <div className="title"> The Recipe Box</div>
       <div className="auth-container">
-        <button
+        <h5
           className="auth-text"
           onClick={() => {
             setView("Auth");
@@ -24,8 +24,8 @@ function WelcomeComponent() {
           }}
         >
           Sign-up
-        </button>
-        <button
+        </h5>
+        <h5
           className="auth-text"
           onClick={() => {
             setView("Auth");
@@ -33,7 +33,7 @@ function WelcomeComponent() {
           }}
         >
           Login
-        </button>
+        </h5>
       </div>
       {view === "Auth" && (
         <Auth register={register} setRegister={setRegister} />

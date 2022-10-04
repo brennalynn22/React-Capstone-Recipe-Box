@@ -43,7 +43,7 @@ const Auth = ({ register, setRegister }) => {
         setName("");
         setPassword("");
         setUsername("");
-        console.log("error");
+        console.log("error in .catch");
       });
   };
 
@@ -68,7 +68,7 @@ const Auth = ({ register, setRegister }) => {
         />
         <input
           className="form-input"
-          type="text"
+          type="password"
           placeholder="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}

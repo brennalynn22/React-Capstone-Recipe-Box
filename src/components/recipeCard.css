@@ -1,0 +1,103 @@
+.home-container{
+    background-color: rgb(244,241,222);
+    height: 100vh;
+}  
+
+.recipeCard-header{
+    font-family:grand hotel;
+    color: rgb(61,61, 91);
+    font-size: 56px;
+    font-weight: 600;
+    margin: 25px;
+    background-color:rgb(244,241,222) ;
+}
+
+.recipe-container {
+    flex-wrap:wrap;
+    display:flex;
+    justify-content: center;
+    background-color: rgb(244,241, 222);
+}
+.recipe-card{
+    margin:10px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    width:550px;
+    background-color: rgb(242,204,143) ;
+    border-radius:10px;
+    flex-direction: column;
+    text-align: left;
+    /* align-items: start; */
+    justify-content: space-between;
+
+}
+.title-container{
+    display: block;
+    margin-top: 20px;
+    
+}
+.recipeStamp{
+    font-family:Grand Hotel;
+    font-size: 45px;
+    display: inline-block;
+    margin-right: 20px;
+   
+}
+.recipeTitle{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+}
+.from-container {
+    margin: 5px;
+    font-weight: 500;
+    font-size: 18px;  
+}
+
+.instructions-container{
+    line-height: 1.4;
+    font-size: 15px;
+}
+.category-display{
+    font-size:18px;
+    font-style: italic;
+}
+h5{
+    font-size: 18px;
+}
+.subheader{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+.ingredients-list{
+    column-count:2;
+    font-size:15px;
+}
+
+.btns-container{
+    display: flex;
+    justify-content: center;
+}
+
+.inputForm-btns{
+    border:1px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(244,241, 222);
+    background-color:rgb(61,61,91);
+    display: flex;
+    letter-spacing: 1px;
+    align-items: flex-end;
+    font-family: "Courier New";
+    font-weight: 550;
+    align-content:center;
+    font-size:15px;
+    justify-content:space-evenly;}
+
+  

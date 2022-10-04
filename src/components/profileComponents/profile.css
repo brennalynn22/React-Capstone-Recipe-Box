@@ -1,0 +1,44 @@
+.home-container{
+    background-color: rgb(244,241,222);
+    height: 100vh;
+    display:flex;
+    align-items: center;
+}
+.profile-title{
+    font-family: Grand Hotel;
+    font-size:64px;
+    color:rgb(61,61,91);
+    font-weight: 600;
+}
+.about{
+    width:900px;
+    font-size:18px;
+}
+.category-container{
+    display: flexbox;
+    flex-direction: row;
+    color:rgb(61,61,91);
+    font-size: 36px;
+    font-weight:600;
+    text-decoration: underline;
+}
+.category-btn{
+    width:350px;
+    display: flex;
+    border-radius: 5px;
+    gap: 15px;
+    margin: 20px;
+    justify-content: center;
+    padding:10px;
+    background-color: rgb(61,61,91);
+    color: rgb(244,241,222);
+    font-size: 18px;
+    font-weight: 600;
+    /* border:rgb(61,61,91) */
+
+}
+.category-btn:hover{
+    background-color: rgb(242,204,143);
+    color:rgb(61,61,91);
+    border: solid rgb(61,61,91);
+}

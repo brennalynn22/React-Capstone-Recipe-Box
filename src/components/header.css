@@ -3,13 +3,53 @@
     height: auto;
     width:100vw;
     display: flex;
-    
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
 
 .headerTitle
 {
-    font-family: "Lobster";
+    display:flex;
+    padding-top: 40px;
+    font-family: "Grand Hotel";
     font-size: 70px;
     font-weight: 700;
-    color:rgb(61,61,91)
+    color:rgb(61,61,91);
+    justify-content: center;
+    
+}
+.logout-container {
+    /* How do I get the Hi and logout even? */
+    display:inline-flex;
+    gap: 25px;
+    position: absolute;
+    right:0;
+    top:0;
+    margin-top:15px;
+    margin-right:50px;
+    font-weight: 600;
+    /* font-size: 18px; */
+}
+.logout-Btn{
+    /* font-size:18px; */
+    font-weight: 600;
+   
+}
+.logout-Btn:hover{
+    color:rgb(242,204,143);
+    text-decoration: underline;
+
+}
+.main-nav{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+ justify-content: space-evenly;
+}
+
+.search-input {
+
+    right:0;
+   
 }
