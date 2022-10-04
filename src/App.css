@@ -11,7 +11,10 @@ padding:0px;
   flex-direction: column;
   justify-content:center;
   align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
 }
+
 .welcome-container {
   background-color: rgb(129,178,154);
   width:100vw;
@@ -52,7 +55,7 @@ padding:0px;
 }
 
 .form-auth {
-  outline: 1px solid rgb(61,61,91);
+  border: 1px solid rgb(61,61,91);
   background-color: rgb(242,204,143);
   width: 300px;
   height: 200px;
@@ -64,14 +67,31 @@ padding:0px;
 }
 .form-input{
   border-radius: 3px;
-  width:200px;
-  
+  border: 1px solid rgb(61,61,91);
+  width:250px;
+  /* background-color: rgb(244,241,222); */
+}
 
+.form-input::placeholder{
+  padding-left: 5px;
+  /* color: rgb(61,61,91); */
 }
 .form-btn{
   border-radius: 5px;
+  border: 1px solid rgb(61,61,91);
+  padding:5px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin: 10px;
   font-weight: 600;
+  letter-spacing: 1px;
+  background-color: rgb(61,61,91);
+  color:rgb(244,241,222)
+}
 
+.form-btn:hover{
+  background-color: rgb(242,204,143);
+    color:rgb(61,61,91);
+    border: solid rgb(61,61,91);
 }
 

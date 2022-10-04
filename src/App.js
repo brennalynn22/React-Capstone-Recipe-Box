@@ -28,21 +28,21 @@ function App() {
           element={authCtx.token ? <Profile /> : <Navigate to="/" />}
         />
         <Route
-          path="/AddRecipe"
+          path="/addRecipe"
           element={authCtx.token ? <AddRecipe /> : <Navigate to="/" />}
         />
         <Route
-          path="/Recipes"
+          path="/recipes"
           element={authCtx.token ? <DisplayAllRecipes /> : <Navigate to="/" />}
         />
         <Route
-          path="/SearchResults/:searchTerm"
+          path="/searchResults/:searchTerm"
           element={
             authCtx.token ? <SearchResultComponent /> : <Navigate to="/" />
           }
         />
         <Route
-          path="/Chapter/:category"
+          path="/category/:category"
           element={
             authCtx.token ? <CategoryDisplayComponent /> : <Navigate to="/" />
           }

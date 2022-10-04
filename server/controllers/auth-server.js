@@ -32,6 +32,7 @@ module.exports ={
                 console.log("New User", token)
                 const exp =Date.now() + 1000 *60*60*48
                 res.send ({
+                    name:newName.dataValues.name,
                     username: newUser.dataValues.username,
                     userId: newUser.dataValues.userId, token, exp
                 })
@@ -55,6 +56,7 @@ module.exports ={
                     const token =createToken(foundUser.dataValues.username, foundUser.dataValues.userId)
                     const exp = Date.now() + 1000* 60 * 60 * 48
                     res.status(200).send({
+                        name:foundUser.dataValues.name,
                         username:foundUser.dataValues.username, userId:foundUser.dataValues.userId, token, exp
                     })
                 } else {

@@ -62,7 +62,7 @@ module.exports = {
       res.sendStatus(400);
     }
   },
-  //look into adding a pop up confirmation to delete
+  
   deleteRecipe: async (req, res) => {
     try {
       const { id } = req.params;

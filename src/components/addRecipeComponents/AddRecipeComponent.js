@@ -61,11 +61,11 @@ const AddRecipeComponent = () => {
             value={creator}
             onChange={(e) => setCreator(e.target.value)}
           />
-          <div className="radio-container">
             <label htmlFor="category" id="categoryHeader">
           Category:
         </label>
-        <label>
+          <div className="radio-container">
+        <label className="radio-line">
         <input
           type="radio"
           id="category"
@@ -73,8 +73,8 @@ const AddRecipeComponent = () => {
           value="Bread"
           // checked={{e.state.selectedOption === "Bread"}}
           onChange={(e) => setCategory(e.target.value)}
-        /> Bread </label>
-        <label>
+        /> <h5>Bread </h5></label>
+        <label className="radio-line">
         <input
           type="radio"
           id="category"
@@ -82,8 +82,8 @@ const AddRecipeComponent = () => {
           value="Breakfast"
           // checked={{e.state.selectedOption === "Breakfast"}}
           onChange={(e) => setCategory(e.target.value)}
-        /> Breakfast </label>
-        <label>
+        /> <h5>Breakfast</h5> </label>
+        <label className="radio-line">
         <input
           type="radio"
           id="category"
@@ -92,7 +92,7 @@ const AddRecipeComponent = () => {
           // checked={{e.state.selectedOption === "Drinks"}}
           onChange={(e) => setCategory(e.target.value)}
         /> Drinks </label>
-        <label>
+        <label className="radio-line">
         <input
           type="radio"
           id="category"
@@ -101,7 +101,7 @@ const AddRecipeComponent = () => {
           // checked={{e.state.selectedOption === Maint"}}
           onChange={(e) => setCategory(e.target.value)}
         /> Main </label>
-        <label>
+        <label className="radio-line">
         <input
           type="radio"
           id="category"
@@ -110,7 +110,7 @@ const AddRecipeComponent = () => {
           // checked={{e.state.selectedOption === "Soup, Salad, and Sides"}}
           onChange={(e) => setCategory(e.target.value)}
         /> Soup, Salad, and Sides </label>
-        <label>
+        <label className="radio-line">
         <input
           type="radio"
           id="category"

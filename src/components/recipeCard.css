@@ -1,6 +1,6 @@
 .home-container{
     background-color: rgb(244,241,222);
-    height: 100vh;
+    min-height: 100vh;
 }  
 
 .recipeCard-header{
@@ -100,4 +100,8 @@ h5{
     font-size:15px;
     justify-content:space-evenly;}
 
-  
+ .inputForm-btns:hover {
+    background-color: rgb(242,204,143);
+    color:rgb(61,61,91);
+    border: solid rgb(61,61,91);
+  }

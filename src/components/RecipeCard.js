@@ -17,10 +17,10 @@ const RecipeCard = ({ recipes, getRecipes }) => {
       }
     })
     .then(()=>{
-      // what should gon in here
      alert("Delete succesfully")
-     window.location.reload()
-    //  getRecipes()
+    //  .location.reload()
+
+     getRecipes()
     })
     .catch((err)=>{ 
       console.log(err)
@@ -30,7 +30,7 @@ const RecipeCard = ({ recipes, getRecipes }) => {
 
   return (
     <div className="recipe-container" >
-      {recipes ? (
+      {recipes.length !==0 ? (
         recipes.map((recipe, index) => (
           <div className="recipe-card">
             <div className="title-container">
@@ -61,7 +61,7 @@ const RecipeCard = ({ recipes, getRecipes }) => {
           </div>
         ))
       ) : (
-        <h3> no recipes yet</h3>
+        <h3> There are no recipes :( </h3>
       )}
     </div>
   );

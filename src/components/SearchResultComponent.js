@@ -37,7 +37,7 @@ const SearchResultComponent = () => {
   }
   useEffect(() => {
    getRecipes()
-  }, [userId]);
+  }, [searchTerm]);
 console.log(recipes)
   // const searchDisplay = recipes
   // .filter((recipe, index) => {

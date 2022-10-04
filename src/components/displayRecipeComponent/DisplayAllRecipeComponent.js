@@ -19,7 +19,7 @@ const DisplayAllRecipeComponent = () => {
       })
       .then((res)=>{
         console.table(res.data)
-        setRecipes([...recipes, ...res.data])
+        setRecipes([...res.data])
       })
       .catch(err =>console.error(err))
   }

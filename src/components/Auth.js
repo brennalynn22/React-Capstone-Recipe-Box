@@ -35,7 +35,7 @@ const Auth = ({ register, setRegister }) => {
       .post(register ? `${url}/register` : `${url}/login`, body)
       .then((res) => {
         console.log(res.data);
-        authCtx.login(res.data.token, res.data.exp, res.data.userId);
+        authCtx.login(res.data.token, res.data.exp, res.data.userId, res.data.name);
         return <NavLink to="/profile"/>
       })
       .catch((err) => {
@@ -69,7 +69,7 @@ const Auth = ({ register, setRegister }) => {
         <input
           className="form-input"
           type="password"
-          placeholder="password"
+          placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />

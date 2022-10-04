@@ -61,13 +61,14 @@ export const AuthContextProvider = (props) => {
     }
   }, []);
 
-  const login = (token, exp, userId) => {
+  const login = (token, exp, userId, username) => {
     setToken(token);
     setUserId(userId);
     console.log(token, userId, exp);
     localStorage.setItem("token", token);
     localStorage.setItem("userId", userId);
     localStorage.setItem("exp", exp);
+    localStorage.setItem("username", username);
 
     const remainingTime = calculateRemainingTime(exp);
 
