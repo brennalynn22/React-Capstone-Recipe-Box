@@ -40,20 +40,7 @@ app.delete("/recipes/:id", isAuthenticated, deleteRecipe);
 sequelize
   .sync()
   .then(() => {
-    // User.create({
-    //     name:"test",
-    //     username:"test",
-    //     hashedPass:"$2a$10$5YL99Orh68iJhsAUgSQdLeKA51eXVsX6n26ea.9WOV3yw5peyy8eq"
-    // })
-    // Recipe.create({
-    //     title: "Smoothie",
-    //      creator: "Edgar",
-    //      category:"Drinks",
-    //      ingredients: "fruit",
-    //      directions: "blend",
-    //      notes: "great",
-    //      userId:1,
-    // })
+   
     app.listen(SERVER_PORT, () =>
       console.log(`dB sync successful & listening on port ${SERVER_PORT}`)
     );

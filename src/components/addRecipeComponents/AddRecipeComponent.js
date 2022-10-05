@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import AuthContext from "../../store/authContext";
 import Header from "../Header";
 import "./addRecipe.css";
+import Footer from "../Footer";
 
 const AddRecipeComponent = () => {
   const { token, userId } = useContext(AuthContext);
@@ -51,7 +52,7 @@ const AddRecipeComponent = () => {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
-          <label htmlFor="creator" id="creatorHeader">
+          <label htmlFor="creator"className="input-label"  id="creatorHeader">
             From:
           </label>
           <input
@@ -61,7 +62,7 @@ const AddRecipeComponent = () => {
             value={creator}
             onChange={(e) => setCreator(e.target.value)}
           />
-            <label htmlFor="category" id="categoryHeader">
+            <label htmlFor="category" className="input-label" id="categoryHeader">
           Category:
         </label>
           <div className="radio-container">
@@ -91,7 +92,7 @@ const AddRecipeComponent = () => {
           value="Drinks"
           // checked={{e.state.selectedOption === "Drinks"}}
           onChange={(e) => setCategory(e.target.value)}
-        /> Drinks </label>
+        /> <h5>Drinks</h5> </label>
         <label className="radio-line">
         <input
           type="radio"
@@ -100,7 +101,7 @@ const AddRecipeComponent = () => {
           value="Main"
           // checked={{e.state.selectedOption === Maint"}}
           onChange={(e) => setCategory(e.target.value)}
-        /> Main </label>
+        /> <h5>Main</h5></label>
         <label className="radio-line">
         <input
           type="radio"
@@ -109,7 +110,7 @@ const AddRecipeComponent = () => {
           value="Soup, Salad, and Sides"
           // checked={{e.state.selectedOption === "Soup, Salad, and Sides"}}
           onChange={(e) => setCategory(e.target.value)}
-        /> Soup, Salad, and Sides </label>
+        />Soup, Salad, and Sides</label>
         <label className="radio-line">
         <input
           type="radio"
@@ -118,10 +119,10 @@ const AddRecipeComponent = () => {
           value="Sweets"
           // checked={{e.state.selectedOption === "Sweets"}}
           onChange={(e) => setCategory(e.target.value)}
-        /> Sweets </label>
+        /><h5>Sweets</h5> </label>
         </div>
 
-          <label htmlFor="ingredients">Ingredients:</label>
+          <label className="input-label" htmlFor="ingredients">Ingredients:</label>
           <textarea
             type="text"
             className="textareaContainer"
@@ -132,7 +133,7 @@ const AddRecipeComponent = () => {
             rows="5"
           ></textarea>
 
-          <label htmlFor="directions">Directions:</label>
+          <label htmlFor="directions" className="input-label">Directions:</label>
           <textarea
             type="text"
             className="textareaContainer"
@@ -143,7 +144,7 @@ const AddRecipeComponent = () => {
             rows="5"
           ></textarea>
 
-          <label htmlFor="Notes">Notes:</label>
+          <label htmlFor="Notes" className="input-label" >Notes:</label>
           <textarea
             type="text"
             className="textareaContainer"
@@ -156,6 +157,7 @@ const AddRecipeComponent = () => {
           <button id="addRecipeBtn">Add Recipe</button>
         </form>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

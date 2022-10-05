@@ -4,6 +4,7 @@ import Header from "../Header";
 import RecipeCard from "../RecipeCard";
 import axios from "axios";
 import AuthContext from "../../store/authContext";
+import Footer from "../Footer";
 
 const DisplayAllRecipeComponent = () => {
   const { token, userId } = useContext(AuthContext);
@@ -32,6 +33,7 @@ console.log(recipes)
       <Header></Header>
       <div className="recipeCard-header">All of Your Recipes</div>
       <RecipeCard recipes={recipes} getRecipes={getRecipes} setRecipes={setRecipes}/>
+    <Footer></Footer>
     </div>
   );
 };

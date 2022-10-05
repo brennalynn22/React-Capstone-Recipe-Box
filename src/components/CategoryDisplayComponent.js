@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import AuthContext from "../store/authContext";
 import RecipeCard from "./RecipeCard";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const CategoryDisplay = () => {
   let { category } = useParams();
@@ -37,12 +38,13 @@ const CategoryDisplay = () => {
   return (
     <div className="home-container">
       <Header></Header>
-      {/* <div className="recipeCard-header"> {`category`} </div> */}
+      <div className="recipeCard-header"> {`${category}`} </div>
       <RecipeCard
         recipes={recipes}
         getRecipes={getRecipes}
         setRecipes={setRecipes}
       />
+      <Footer></Footer>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Auth from "./Auth";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AuthContext from "../store/authContext";
 
+ 
 function WelcomeComponent() {
   const authCtx = useContext(AuthContext);
   console.log(authCtx.token);
@@ -38,6 +39,7 @@ function WelcomeComponent() {
       {view === "Auth" && (
         <Auth register={register} setRegister={setRegister} />
       )}
+      
     </div>
   );
 }

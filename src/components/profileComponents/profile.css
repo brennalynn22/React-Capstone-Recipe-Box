@@ -6,9 +6,10 @@
 }
 .profile-title{
     font-family: Grand Hotel;
-    font-size:64px;
     color:rgb(61,61,91);
     font-weight: 600;
+    font-size: 56px;
+    margin-top: 25px;
 }
 .about{
     width:900px;
@@ -16,7 +17,7 @@
 }
 .category-container{
     display: flexbox;
-    flex-direction: row;
+    flex-direction: wrap;
     color:rgb(61,61,91);
     font-size: 36px;
     font-weight:600;

@@ -1,6 +1,6 @@
 import axios from "axios";
-import React, { useState, useEffect, useContext, useCallback } from "react";
-
+import React, { useContext } from "react";
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import "./recipeCard.css";
 import AuthContext from "../store/authContext";
 
@@ -18,7 +18,6 @@ const RecipeCard = ({ recipes, getRecipes }) => {
     })
     .then(()=>{
      alert("Delete succesfully")
-    //  .location.reload()
 
      getRecipes()
     })
@@ -42,9 +41,9 @@ const RecipeCard = ({ recipes, getRecipes }) => {
 
             <div className="instructions-container">
               <h5 className="subheader">Ingredients:</h5>
-              <li className="ingredients-list">
+              <div className="ingredients-list">
                 <h5>{recipe.ingredients}</h5>
-              </li>
+              </div>
               <h5 className="subheader">Directions:</h5>
               <h5>{recipe.directions}</h5>
               <h5 className="subheader">Notes:</h5>
@@ -52,11 +51,11 @@ const RecipeCard = ({ recipes, getRecipes }) => {
               
             </div>
             <div className="btns-container">
-              <button className="inputForm-btns" id="editBtn" type="button">
+              {/* <button className="inputForm-btns" id="editBtn" type="button">
                 Edit or Add a Note
-              </button>
+              </button> */}
               {console.log(recipe)}
-              <button className="inputForm-btns" onClick={()=> deleteRecipe(recipe.recipeId)}>Delete</button>
+              <button className="inputForm-btns" onClick={()=> deleteRecipe(recipe.recipeId)}><DeleteOutlineIcon />         Delete</button>
             </div>
           </div>
         ))

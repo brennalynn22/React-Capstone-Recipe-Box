@@ -2,26 +2,24 @@ import React, { useState, useContext } from "react";
 import "./header.css";
 import AuthContext from "../store/authContext";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { NavLink, Link , useNavigate} from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
-import RecipeCard from "./RecipeCard";
-
 const Header = ({ recipes }) => {
   const [username] = useState(localStorage.getItem("username"));
   const [search, setSearch] = useState();
   const authCtx = useContext(AuthContext);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   const styleActiveLink = ({ isActive }) => {
     return {
       color: isActive ? "rgb(242, 204, 143)" : " rgb(61,61,91)",
-      textDecoration: "none"
+      textDecoration: "none",
     };
   };
-  const handleClick= ()=>{
-    navigate(`/searchResults/${search}`)
-    setSearch('')
-  }
+  const handleClick = () => {
+    navigate(`/searchResults/${search}`);
+    setSearch("");
+  };
 
   return (
     <header className="header">
@@ -34,13 +32,21 @@ const Header = ({ recipes }) => {
       </div>
       <div className="main-nav">
         <div className="nav-links">
-          <NavLink style={styleActiveLink} to="/profile" className="home">
+          <NavLink to="/profile" className="navlink-text">
             Home
-          </NavLink> 
-          <NavLink style={styleActiveLink} to="/addRecipe" className="addARecipe">
+          </NavLink>
+          <NavLink
+            // style={styleActiveLink}
+            to="/addRecipe"
+            className="navlink-text"
+          >
             Add a Recipe
           </NavLink>
-          <NavLink style={styleActiveLink} to="/recipes" className="showAll">
+          <NavLink
+            // style={styleActiveLink}
+            to="/recipes"
+            className="navlink-text"
+          >
             Show all
           </NavLink>
         </div>
@@ -55,9 +61,9 @@ const Header = ({ recipes }) => {
             }}
           />
           {/* <Link to={`/SearchResults/${search}`}> */}
-            <button className="searchbtn" onClick={handleClick}>
-              <SearchIcon />
-            </button>
+          <button className="searchbtn" onClick={handleClick}>
+            <SearchIcon className="searchIcon"/>
+          </button>
           {/* </Link> */}
         </div>
       </div>

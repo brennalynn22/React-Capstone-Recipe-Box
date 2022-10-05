@@ -12,7 +12,7 @@
 .headerTitle
 {
     display:flex;
-    padding-top: 40px;
+    padding-top: 20px;
     font-family: "Grand Hotel";
     font-size: 70px;
     font-weight: 700;
@@ -22,7 +22,7 @@
 }
 .logout-container {
     display:inline-flex;
-    gap: 25px;
+    gap: 35px;
     position: absolute;
     right:0;
     top:0;
@@ -42,21 +42,29 @@
 
 }
  .main-nav{
-    /* position: relative; */
     display:flex;
- justify-content: space-between;
- padding:0px 40px;
+    justify-content: space-between;
+    padding:0px 40px;
+    margin-bottom: 5px;
 } 
 .nav-links{
-display: flex;
-gap:30px;
-font-weight: 600;
-letter-spacing: 1px;
+    display: flex;
+    gap:30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+a.navlink-text{
+    color:rgb(61,61,91);
+   
 }
 
-/* .addARecipe:hover{
+a.navlink-text:hover{
     color:rgb(242,204,143);
-} */
+    text-decoration: underline;
+}
+a.navlink-text.active{
+    color:rgb(242,204,143);
+}
 
 .search-wrapper {
     display: flex;
@@ -69,9 +77,31 @@ letter-spacing: 1px;
     
 }
 .searchbar::placeholder{
-    padding-left: 5px;
+    padding-left: 7px;
 }
 .searchBtn{
-    
-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.searchIcon{
+    color:rgb(244,241,222);
+    border: 0px;
+    outline:0px;
+    /* border-radius: 5px; */
+    background-color:rgb(61,61,91);
+}
+.searchIcon:hover{
+    color:rgb(61,61,91);
+    background-color: rgb(242,204,143);
+}
+
+.footer {
+    background-color: rgb(244,241,222);
+    justify-content: right;
+    display: flex;
+    gap:20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-right: 25px;
+    padding-top: 20px;
 }

@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import AuthContext from "../store/authContext";
 import RecipeCard from "./RecipeCard";
 import Header from "./Header";
+import Footer from "./Footer";
 
 
 
@@ -39,22 +40,13 @@ const SearchResultComponent = () => {
    getRecipes()
   }, [searchTerm]);
 console.log(recipes)
-  // const searchDisplay = recipes
-  // .filter((recipe, index) => {
-  //   let title = recipe.title.toLowerCase();
-  //   let searchParams = search.toLowerCase();
-  //   return title.includes(searchParams);
-  // })
-  // .map((recipe, index) => {
-  //   console.log(recipe);
-  //   // return <RecipeCard recipe={recipe}/>
-  // });
+
   return (
     <div className="home-container">
       <Header></Header>
       <div className="recipeCard-header"> Search Results </div>
       <RecipeCard recipes={recipes} getRecipes={getRecipes} setRecipes={setRecipes}/>
-
+      <Footer></Footer>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import axios from "axios";
 import AuthContext from "../store/authContext";
 import { NavLink } from "react-router-dom";
 
+
 const Auth = ({ register, setRegister }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -79,6 +80,7 @@ const Auth = ({ register, setRegister }) => {
       <button className="form-btn" onClick={() => setRegister(!register)}>
         Need to {register ? "Login" : "Sign up"}?
       </button>
+      
     </main>
   );
 };

@@ -72,6 +72,7 @@ h5{
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 5px;
+    letter-spacing: 1px;
     
 }
 .ingredients-list{
@@ -98,7 +99,8 @@ h5{
     font-weight: 550;
     align-content:center;
     font-size:15px;
-    justify-content:space-evenly;}
+    gap:10px;
+    justify-content:right;}
 
  .inputForm-btns:hover {
     background-color: rgb(242,204,143);
