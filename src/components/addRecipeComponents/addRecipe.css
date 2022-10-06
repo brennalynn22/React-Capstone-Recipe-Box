@@ -9,8 +9,10 @@
     background-color: rgb(244,241,222);
     /* display: flex;  */
     justify-content: center;
+    
 
 }
+
 .addRecipe-title{
     /* how do I make center above th box? I tried align-itens, jutify content, flex, diection row and columns w.o it moving */
     font-family: Grand Hotel;
@@ -20,6 +22,7 @@
     color:rgb(61,61,91);
     font-weight: 600;
     margin:25px;
+    
 }
 .addRecipe-form {
    margin:10px;
@@ -35,7 +38,7 @@
     padding-left: 26px;
     border-radius:15px;
     position: relative;
-    
+    box-shadow: 5px 16px 26px -4px #CFD5D6
 }
 #recipeHeader {
     padding:5px;
@@ -51,18 +54,21 @@
 
 }
 
+
 .radio-line{
     display: flex;
     height: 27px;
     width:50%;
     justify-content: left;
     padding-left: 50px;
+
 }
 .addRecipe-form input {
     width: 547px;
     padding: 1px;
     padding-left: 5px;
-    
+    border-radius: 3px;
+    border:1px solid rgb(118, 118, 118);
 }
 .radio-line input{
     width:auto;
@@ -82,6 +88,7 @@ h5{
     padding:1px;
     padding-left:5px;
     width:547px;
+    border-radius: 3px;
 }
 #addRecipeBtn {
     display: flex;

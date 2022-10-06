@@ -1,13 +1,8 @@
-import React from 'react'
-import "./header.css"
+import React from "react";
+import "./header.css";
 
 const Footer = () => {
-  return (
-    <div className='footer'>
-        <p>Made by: Breanna Wentz</p>
-        <p>2022</p>
-    </div>
-  )
-}
+  return <footer className="footer">Made by: Breanna Wentz, 2022</footer>;
+};
 
 export default Footer;

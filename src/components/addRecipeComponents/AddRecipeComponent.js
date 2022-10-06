@@ -110,7 +110,7 @@ const AddRecipeComponent = () => {
           value="Soup, Salad, and Sides"
           // checked={{e.state.selectedOption === "Soup, Salad, and Sides"}}
           onChange={(e) => setCategory(e.target.value)}
-        />Soup, Salad, and Sides</label>
+        /><h5>Soup, Salad & Sides</h5></label>
         <label className="radio-line">
         <input
           type="radio"

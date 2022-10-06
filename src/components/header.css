@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(129,178,154);
+    background-color: #81b29a;
     /* height: auto; */
     width:100vw;
     display: flex;
@@ -9,10 +9,9 @@
     box-sizing:border-box;
 }
 
-.headerTitle
-{
+.headerTitle{
     display:flex;
-    padding-top: 20px;
+    padding-top: 25px;
     font-family: "Grand Hotel";
     font-size: 70px;
     font-weight: 700;
@@ -23,11 +22,12 @@
 .logout-container {
     display:inline-flex;
     gap: 35px;
+    color:rgb(61,61,91);
     position: absolute;
     right:0;
     top:0;
     margin-top:15px;
-    margin-right:50px;
+    margin-right:51px;
     font-weight: 600;
     /* font-size: 18px; */
 }
@@ -44,18 +44,18 @@
  .main-nav{
     display:flex;
     justify-content: space-between;
-    padding:0px 40px;
+    padding:0px 50px;
     margin-bottom: 5px;
 } 
 .nav-links{
     display: flex;
-    gap:30px;
+    gap:35px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
 }
 a.navlink-text{
     color:rgb(61,61,91);
-   
+   padding-top: 10px;
 }
 
 a.navlink-text:hover{
@@ -72,36 +72,64 @@ a.navlink-text.active{
 }
 .searchbar{
     /* position:relative */
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
   border: 1px solid rgb(61,61,91);
-    
+  cursor: pointer;
+  margin-bottom: 5px;
+  
 }
+    
 .searchbar::placeholder{
+    padding-left: 5px;
+}
+.searchbar:focus{
+    background-color: rgb(244,241,222);
     padding-left: 7px;
 }
-.searchBtn{
-    border-radius: 5px;
-}
-
-.searchIcon{
+    
+.search-btn{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background: rgb(61,61,91);
+    width:30px;
     color:rgb(244,241,222);
-    border: 0px;
-    outline:0px;
-    /* border-radius: 5px; */
-    background-color:rgb(61,61,91);
-}
-.searchIcon:hover{
-    color:rgb(61,61,91);
-    background-color: rgb(242,204,143);
+    padding:3px;
+    margin-bottom: 5px;
+    /* justify-content: center;
+    align-items: center; */
+
+    
+
 }
 
-.footer {
+.search-btn:hover {
+    background-color: rgb(242,204,143);
+    color:rgb(61,61,91);
+    border: 1px solid rgb(61,61,91);
+}
+.bibi-search{
+    /* justify-content: center;
+    align-items: center; */
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+   
+     
+ }
+
+
+
+footer {
+    /* position: absolute; */
+    left:0;
+    bottom:0;
     background-color: rgb(244,241,222);
-    justify-content: right;
-    display: flex;
+    text-align: left;
     gap:20px;
+    margin-top: 20px;
     font-size: 15px;
-    letter-spacing: 1px;
-    padding-right: 25px;
+    padding-left: 25px;
     padding-top: 20px;
+    padding-bottom: 10px;
 }

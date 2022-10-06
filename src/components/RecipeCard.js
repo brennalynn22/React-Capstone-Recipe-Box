@@ -1,13 +1,16 @@
 import axios from "axios";
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import "./recipeCard.css";
 import AuthContext from "../store/authContext";
+import {BarLoader} from "react-spinners";
 
 
 const RecipeCard = ({ recipes, getRecipes }) => {
+  console.log(recipes)
   const {userId, token} = useContext(AuthContext)
-
+  const [loading, setLoading]=useState(true)
+ 
 
   const deleteRecipe= id => {
     window.confirm("Are you sure you want to delete this recipe?")
@@ -41,9 +44,11 @@ const RecipeCard = ({ recipes, getRecipes }) => {
 
             <div className="instructions-container">
               <h5 className="subheader">Ingredients:</h5>
-              <div className="ingredients-list">
-                <h5>{recipe.ingredients}</h5>
-              </div>
+              <ul className="ingredients-list">
+                {recipe.ingredients.split(", ").map((i)=>{
+                  return <li>{i}</li>
+                })}
+              </ul>
               <h5 className="subheader">Directions:</h5>
               <h5>{recipe.directions}</h5>
               <h5 className="subheader">Notes:</h5>
