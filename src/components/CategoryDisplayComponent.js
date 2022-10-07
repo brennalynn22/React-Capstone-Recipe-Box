@@ -7,7 +7,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { BarLoader } from "react-spinners";
 
-
 const CategoryDisplay = () => {
   let { category } = useParams();
   console.log(category);
@@ -15,12 +14,10 @@ const CategoryDisplay = () => {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
 
-
   const baseURL = "http://localhost:8900";
   const getRecipes = async () => {
     console.log(userId);
-    const res = await
-    axios
+    const res = await axios
       .get(`${baseURL}/recipes/${userId}`, {
         headers: {
           authorization: token,
@@ -32,13 +29,12 @@ const CategoryDisplay = () => {
           return recipe.category.toLowerCase().includes(category.toLowerCase());
         });
         setRecipes(filteredRecipes);
-        setTimeout(()=>{
-          setLoading(false)
-        }, 1000)
-        
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000);
       })
       .catch((err) => console.error(err));
-      // setLoading(false);
+    // setLoading(false);
   };
   useEffect(() => {
     getRecipes();
@@ -53,13 +49,13 @@ const CategoryDisplay = () => {
       <Header></Header>
       <div className="recipeCard-header"> {`${category}`} </div>
       {loading ? (
-        <BarLoader color="#81b29a" />
+        <BarLoader color="#81b29a" height={8} width={200} />
       ) : (
-      <RecipeCard
-        recipes={recipes}
-        getRecipes={getRecipes}
-        setRecipes={setRecipes}
-      />
+        <RecipeCard
+          recipes={recipes}
+          getRecipes={getRecipes}
+          setRecipes={setRecipes}
+        />
       )}
       <Footer></Footer>
     </div>

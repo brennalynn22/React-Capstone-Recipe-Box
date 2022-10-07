@@ -23,7 +23,7 @@
     padding-right: 20px;
     padding-top: 0px;
     padding-left: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     width:550px;
     background-color: rgb(242,204,143) ;
     border-radius:10px;
@@ -31,7 +31,8 @@
     text-align: left;
     /* align-items: start; */
     justify-content: space-between;
-    box-shadow: 5px 16px 26px -4px #CFD5D6
+    box-shadow: 5px 5px 34px -1px #c5c0b1;
+    
 
 }
 .title-container{
@@ -102,12 +103,17 @@ h5{
     align-content:center;
     font-size:15px;
     gap:10px;
-    justify-content:right;}
+    box-shadow: 5px 6px 14px 0px #C6BF95;
+    /* justify-content:right; */
+
+}
 
  .inputForm-btns:hover {
     background-color: rgb(242,204,143);
     color:rgb(61,61,91);
     border: solid rgb(61,61,91);
+    box-shadow: 5px 6px 14px 0px #aea77f;
+
   }
 
   .loader-container {

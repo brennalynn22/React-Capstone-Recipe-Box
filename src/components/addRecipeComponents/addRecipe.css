@@ -38,7 +38,9 @@
     padding-left: 26px;
     border-radius:15px;
     position: relative;
-    box-shadow: 5px 16px 26px -4px #CFD5D6
+    box-shadow: 5px 5px 34px -1px #c5c0b1;
+    
+    
 }
 #recipeHeader {
     padding:5px;
@@ -102,9 +104,13 @@ h5{
     color:rgb(244,241,222) ;
     background-color: rgb(61,61,91);
     justify-content: center;
+    box-shadow: 5px 6px 14px 0px #C6BF95;
+
 }
 #addRecipeBtn:hover{
     background-color: rgb(242,204,143);
     color:rgb(61,61,91);
     border: solid rgb(61,61,91);
+    box-shadow: 5px 6px 14px 0px #aea77f;
+
 }

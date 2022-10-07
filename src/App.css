@@ -64,6 +64,7 @@ padding:0px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 5px 6px 14px 0px #6e7b7c;
 }
 .form-input{
   border-radius: 3px;
@@ -86,12 +87,16 @@ padding:0px;
   font-weight: 600;
   letter-spacing: 1px;
   background-color: rgb(61,61,91);
-  color:rgb(244,241,222)
+  color:rgb(244,241,222);
+  box-shadow: 5px 6px 14px 0px #6e7b7c;
+
 }
 
 .form-btn:hover{
   background-color: rgb(242,204,143);
     color:rgb(61,61,91);
     border: solid rgb(61,61,91);
+  box-shadow: 5px 6px 14px 0px #5b6565;
+
 }
 

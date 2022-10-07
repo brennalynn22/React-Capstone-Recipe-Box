@@ -64,7 +64,8 @@ console.log(recipes)
       <Header></Header>
       <div className="recipeCard-header"> Search Results </div>
       { loading ? ( 
-        <BarLoader color="81b29a"/>
+        <BarLoader color="81b29a" height={8}
+        width={200}/>
       ) : (
       <RecipeCard recipes={recipes} getRecipes={getRecipes} setRecipes={setRecipes}/>
        )} 

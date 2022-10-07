@@ -54,7 +54,8 @@ const DisplayAllRecipeComponent = () => {
       <div className="recipeCard-header">All of Your Recipes</div>
 
       {loading ? (
-        <BarLoader color="#81b29a" />
+        <BarLoader color="#81b29a"  height={8}
+        width={200}/>
       ) : (
         <RecipeCard
           recipes={recipes}
